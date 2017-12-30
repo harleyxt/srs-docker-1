@@ -49,7 +49,7 @@ docker run -d \
 It automatically runs `/bin/bash -c /root/start.sh` and starts the SRS server. 
 
 ### Structure: 
-![SRS Structure Mindmap](https://github.com/zhouweitong3/srs-docker/raw/v2/structure.png)  
+![SRS Structure Mindmap](https://github.com/zhouweitong3/srs-docker/raw/v2_ali/structure.png)  
 
 ### Customize settings:
 Run the container in the interactive mode:`docker run -it` along with the parameters above.  
