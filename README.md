@@ -3,8 +3,8 @@
 ### Branches:  
 `v2` branch is the file for SRS version 2,bulding the image on a Ubuntu system.  
 `v3` branch is the file for SRS version 3,bulding the image on a Ubuntu system.  
-`v2_ali` branch is the file for SRS version 2,bulding the image on a Cent OS system.  
-`v3_ali` branch is the file for SRS version 3,bulding the image on a Cent OS system.  
+`aliv2` branch is the file for SRS version 2,bulding the image on a Cent OS system.  
+`aliv3` branch is the file for SRS version 3,bulding the image on a Cent OS system.  
 `livego` branch is the file for Livego Media Server.  
 `livego-win` branch is an unoffical Windows build of Livego.  
 `mediasrv` branch is the file for ETS Mediasrv Media Server.  
@@ -50,7 +50,7 @@ docker run -d \
 It automatically runs `/bin/bash -c /root/start.sh` and starts the SRS server. 
 
 ### Structure: 
-![SRS Structure Mindmap](https://github.com/zhouweitong3/srs-docker/raw/v3_ali/structure.png)  
+![SRS Structure Mindmap](https://github.com/zhouweitong3/srs-docker/raw/v3/structure.png)  
 
 ### Customize settings:
 Run the container in the interactive mode:`docker run -it` along with the parameters above.  
