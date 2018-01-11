@@ -20,7 +20,7 @@ RUN yum install -y git go sudo bash psmisc net-tools bash-completion wget && \
     git clone https://github.com/golang/net.git && \
 # Patch the system checking code,and do some fixing
     touch /etc/redhat-release && \
-#    sed -i '40c ret=$?; if [[ 0 -eq $ret ]]; then' /root/software/srs/trunk/auto/depends.sh && \
+#   sed -i '40c ret=$?; if [[ 0 -eq $ret ]]; then' /root/software/srs/trunk/auto/depends.sh && \
 # Install SRS
     cd /root/software/srs/trunk && \
     sudo ./configure --jobs=4 --full && \
@@ -90,5 +90,9 @@ VOLUME ["/root/software/go-oryx/conf","/root/software/srs/trunk/conf","/root/sam
 EXPOSE 1935
 EXPOSE 1985
 EXPOSE 8080
+EXPOSE 8081
+EXPOSE 8082
+EXPOSE 443
+EXPOSE 8443
 # Startup Command
 CMD /bin/bash -c /root/start.sh
